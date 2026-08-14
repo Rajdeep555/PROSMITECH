@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROSMITECH Private Limited — Smarter Technology. Stronger Systems. Better Results.</title>
+    <meta name="description"
+        content="PROSMITECH builds government financial software, enterprise systems and AI & Robotics future-skills programs for Northeast India." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css" />
+</head>
+
+<body class="antialiased">
+
+    <!-- NAVBAR -->
+    <header
+        class="fixed top-0 inset-x-0 z-50 bg-[var(--color-bg)]/85 backdrop-blur border-b border-[var(--color-line)]">
+        <div class="container-px mx-auto max-w-7xl flex items-center justify-between h-18 py-3">
+            <a href="index.html" class="flex items-center gap-2.5">
+                <span
+                    class="w-9 h-9 rounded-lg bg-[var(--color-blue)] flex items-center justify-center relative overflow-hidden">
+                    <span class="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-[var(--color-green)]/80"></span>
+                    <span class="relative font-display font-bold text-white text-lg">P</span>
+                </span>
+                <span class="font-display font-bold text-[17px] tracking-tight">PROSMITECH</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="works.html" class="nav-link">Work</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="contact.html" class="btn-primary !px-5 !py-2.5 !text-[13px]">Start a project</a>
+            </div>
+
+            <button id="menuBtn" aria-label="Open menu"
+                class="md:hidden w-10 h-10 flex items-center justify-center rounded-md border border-[var(--color-line)]">
+                <svg id="iconOpen" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-t border-[var(--color-line)] bg-[var(--color-bg)]">
+            <div class="container-px py-4 flex flex-col gap-1">
+                <a href="index.html" class="py-2.5 text-sm font-medium text-[var(--color-blue)]">Home</a>
+                <a href="services.html" class="py-2.5 text-sm font-medium">Services</a>
+                <a href="works.html" class="py-2.5 text-sm font-medium">Work</a>
+                <a href="about.html" class="py-2.5 text-sm font-medium">About</a>
+                <a href="contact.html" class="py-2.5 text-sm font-medium">Contact</a>
+                <a href="contact.html" class="btn-primary mt-2 !text-[13px]">Start a project</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-18">
+
+        <!-- HERO -->
+        <section class="relative overflow-hidden bg-grid">
+            <div
+                class="container-px mx-auto max-w-7xl grid lg:grid-cols-2 gap-14 items-center pt-20 pb-16 lg:pt-28 lg:pb-24">
+                <div class="animate-fade-up">
+                    <span class="eyebrow">Software · AI &amp; Robotics · Digital Governance</span>
+                    <h1
+                        class="font-display font-bold text-[2.5rem] leading-[1.08] md:text-6xl md:leading-[1.05] mt-5 text-balance">
+                        Replacing traditional systems with <span class="text-[var(--color-blue)]">AI‑powered</span>
+                        solutions.
+                    </h1>
+                    <p class="text-[var(--color-muted)] text-base md:text-lg mt-6 max-w-lg leading-relaxed">
+                        PROSMITECH builds intelligent software for governments and institutions, and prepares Northeast
+                        India's youth for AI‑enabled careers — through practical, future‑ready technology.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-9">
+                        <a href="services.html" class="btn-primary">View our services</a>
+                        <a href="contact.html" class="btn-secondary">Talk to our team</a>
+                    </div>
+                    <div class="flex items-center gap-6 mt-10 font-mono-label text-xs text-[var(--color-muted-2)]">
+                        <span>EST. 2023</span>
+                        <span class="w-1 h-1 rounded-full bg-[var(--color-line)]"></span>
+                        <span>GUWAHATI, ASSAM</span>
+                        <span class="w-1 h-1 rounded-full bg-[var(--color-line)]"></span>
+                        <span>NORTHEAST INDIA</span>
+                    </div>
+                </div>
+
+                <!-- signature: fragmented -> connected network -->
+                <div class="relative h-[360px] md:h-[440px] animate-fade-up" style="animation-delay:.15s">
+                    <svg viewBox="0 0 480 440" class="w-full h-full">
+                        <defs>
+                            <filter id="pulseGlow" x="-200%" y="-200%" width="500%" height="500%">
+                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                <feMerge>
+                                    <feMergeNode in="blur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+
+                        <!-- circuit traces (x/y axis only) -->
+                        <g stroke="var(--color-blue)" stroke-width="1.4" fill="none" opacity="0.4">
+                            <path id="trace1" d="M90,80 H230 V150" />
+                            <path id="trace2" d="M230,150 H380 V90" />
+                            <path id="trace3" d="M230,150 V280 H180" />
+                            <path id="trace4" d="M180,280 V320 H330" />
+                            <path id="trace5" d="M330,320 V90 H380" />
+                            <path id="trace6" d="M180,280 V360 H90" />
+                        </g>
+
+                        <!-- travelling light pulses -->
+                        <g filter="url(#pulseGlow)">
+                            <circle r="3.2" fill="var(--color-blue-light)">
+                                <animateMotion dur="3.2s" begin="0s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#trace1" />
+                                </animateMotion>
+                            </circle>
+                            <circle r="3.2" fill="var(--color-green)">
+                                <animateMotion dur="3.8s" begin=".4s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#trace2" />
+                                </animateMotion>
+                            </circle>
+                            <circle r="3.2" fill="var(--color-blue-light)">
+                                <animateMotion dur="4.2s" begin=".8s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#trace3" />
+                                </animateMotion>
+                            </circle>
+                            <circle r="3.2" fill="var(--color-blue-light)">
+                                <animateMotion dur="3.5s" begin="1.2s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#trace4" />
+                                </animateMotion>
+                            </circle>
+                            <circle r="3.2" fill="var(--color-green)">
+                                <animateMotion dur="4.6s" begin="1.6s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#trace5" />
+                                </animateMotion>
+                            </circle>
+                            <circle r="3.2" fill="var(--color-blue-light)">
+                                <animateMotion dur="3.9s" begin="2s" repeatCount="indefinite" rotate="auto">
+                                    <mpath href="#trace6" />
+                                </animateMotion>
+                            </circle>
+                        </g>
+
+                        <!-- scattered faint dots (traditional/fragmented) -->
+                        <g fill="var(--color-muted-2)" opacity="0.35">
+                            <circle cx="40" cy="200" r="3" />
+                            <circle cx="420" cy="220" r="3" />
+                            <circle cx="60" cy="120" r="2.5" />
+                            <circle cx="440" cy="330" r="2.5" />
+                            <circle cx="300" cy="40" r="2.5" />
+                        </g>
+                        <!-- connected network nodes (intelligent) -->
+                        <g>
+                            <circle cx="90" cy="80" r="7" fill="var(--color-green)" class="animate-drift" />
+                            <circle cx="230" cy="150" r="10" fill="var(--color-blue)" />
+                            <circle cx="380" cy="90" r="6" fill="var(--color-blue-light)" class="animate-drift"
+                                style="animation-delay:1s" />
+                            <circle cx="180" cy="280" r="8" fill="var(--color-blue)" class="animate-drift"
+                                style="animation-delay:.5s" />
+                            <circle cx="330" cy="320" r="6" fill="var(--color-green)" />
+                            <circle cx="90" cy="360" r="5" fill="var(--color-blue-light)" />
+                        </g>
+                    </svg>
+                    <div
+                        class="absolute bottom-2 left-2 right-2 md:left-6 md:right-auto card px-4 py-3 shadow-[0_20px_40px_-20px_rgba(11,18,32,0.25)]">
+                        <p class="font-mono-label text-[11px] text-[var(--color-muted-2)] uppercase tracking-wide">
+                            Fragmented → Connected</p>
+                        <p class="text-sm font-medium mt-1">From manual processes to intelligent systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAPABILITIES -->
+        <section class="container-px mx-auto max-w-7xl py-20 lg:py-28">
+            <div class="max-w-xl">
+                <span class="eyebrow">What we do</span>
+                <h2 class="font-display font-bold text-3xl md:text-[2.6rem] mt-4 leading-tight text-balance">Four
+                    capabilities, one objective — measurable results.</h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+                <div
+                    class="card p-6 hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <div
+                        class="w-10 h-10 rounded-md bg-[var(--color-blue)]/10 flex items-center justify-center text-[var(--color-blue)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17 8l4 4-4 4M7 8l-4 4 4 4M14 4l-4 16" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-semibold text-lg mt-5">Software Development</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Enterprise and government
+                        software, financial management systems, MIS, and custom digital platforms.</p>
+                </div>
+
+                <div
+                    class="card p-6 hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <div
+                        class="w-10 h-10 rounded-md bg-[var(--color-green)]/10 flex items-center justify-center text-[var(--color-green-deep)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.8">
+                            <circle cx="12" cy="12" r="3" />
+                            <path stroke-linecap="round"
+                                d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-semibold text-lg mt-5">AI &amp; Robotics</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">AI &amp; Robotics education,
+                        future‑skills programs and intelligent automation for youth and institutions.</p>
+                </div>
+
+                <div
+                    class="card p-6 hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <div
+                        class="w-10 h-10 rounded-md bg-[var(--color-blue)]/10 flex items-center justify-center text-[var(--color-blue)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 19h16M4 15l4-5 4 3 4-7 4 4" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-semibold text-lg mt-5">Digital Transformation</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Assessment, digital design,
+                        automation, AI integration and analytics for continuous improvement.</p>
+                </div>
+
+                <div
+                    class="card p-6 hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <div
+                        class="w-10 h-10 rounded-md bg-[var(--color-green)]/10 flex items-center justify-center text-[var(--color-green-deep)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.8">
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <path stroke-linecap="round" d="M9 9h.01M9 12h6M9 15h6" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-semibold text-lg mt-5">Digital Solutions</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Customised solutions for
+                        government, autonomous councils, educational institutions and businesses.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRADITIONAL VS PROSMITECH -->
+        <section class="bg-[var(--color-ink)] text-white py-20 lg:py-28">
+            <div class="container-px mx-auto max-w-7xl">
+                <span class="eyebrow !text-[var(--color-green)]">Our philosophy</span>
+                <h2 class="font-display font-bold text-3xl md:text-[2.6rem] mt-4 max-w-2xl leading-tight text-balance">
+                    Technology should not just digitise a process. It should transform it.</h2>
+
+                <div class="grid md:grid-cols-2 gap-5 mt-14">
+                    <div class="rounded-xl border border-white/10 bg-white/[0.03] p-8">
+                        <p class="font-mono-label text-[11px] tracking-widest uppercase text-white/40">Traditional
+                            system</p>
+                        <div
+                            class="flex flex-wrap items-center gap-x-2 gap-y-3 mt-5 font-display text-lg md:text-xl text-white/70">
+                            <span>Manual</span><span class="text-white/25">→</span>
+                            <span>Slow</span><span class="text-white/25">→</span>
+                            <span>Fragmented</span><span class="text-white/25">→</span>
+                            <span>Reactive</span>
+                        </div>
+                    </div>
+                    <div class="rounded-xl border border-[var(--color-green)]/30 bg-[var(--color-green)]/[0.06] p-8">
+                        <p class="font-mono-label text-[11px] tracking-widest uppercase text-[var(--color-green)]">
+                            PROSMITECH approach</p>
+                        <div
+                            class="flex flex-wrap items-center gap-x-2 gap-y-3 mt-5 font-display text-lg md:text-xl text-white">
+                            <span>Digital</span><span class="text-[var(--color-green)]/50">→</span>
+                            <span>Automated</span><span class="text-[var(--color-green)]/50">→</span>
+                            <span>Connected</span><span class="text-[var(--color-green)]/50">→</span>
+                            <span>Intelligent</span><span class="text-[var(--color-green)]/50">→</span>
+                            <span>Data‑Driven</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- APPROACH PIPELINE -->
+        <section class="container-px mx-auto max-w-7xl py-20 lg:py-28">
+            <span class="eyebrow">Our approach</span>
+            <h2 class="font-display font-bold text-3xl md:text-[2.6rem] mt-4 max-w-2xl leading-tight text-balance">Five
+                steps from traditional to AI‑powered transformation.</h2>
+
+            <div class="mt-16 relative">
+                <div class="hidden md:block absolute top-6 left-0 right-0 h-px pipe-line"></div>
+                <div class="grid md:grid-cols-5 gap-10 md:gap-6">
+
+                    <div class="relative">
+                        <div class="node-dot mb-5"></div>
+                        <p class="font-mono-label text-[11px] text-[var(--color-muted-2)]">01</p>
+                        <h3 class="font-display font-semibold mt-1">Identify</h3>
+                        <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Understand the existing
+                            process and its limitations.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="node-dot mb-5"></div>
+                        <p class="font-mono-label text-[11px] text-[var(--color-muted-2)]">02</p>
+                        <h3 class="font-display font-semibold mt-1">Digitise</h3>
+                        <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Convert traditional processes
+                            into structured digital workflows.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="node-dot mb-5"></div>
+                        <p class="font-mono-label text-[11px] text-[var(--color-muted-2)]">03</p>
+                        <h3 class="font-display font-semibold mt-1">Automate</h3>
+                        <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Reduce repetitive manual
+                            activities.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="node-dot mb-5"></div>
+                        <p class="font-mono-label text-[11px] text-[var(--color-muted-2)]">04</p>
+                        <h3 class="font-display font-semibold mt-1">Intelligent</h3>
+                        <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Introduce AI, analytics and
+                            decision support where appropriate.</p>
+                    </div>
+                    <div class="relative">
+                        <div class="node-dot mb-5" style="background:var(--color-green)"></div>
+                        <p class="font-mono-label text-[11px] text-[var(--color-muted-2)]">05</p>
+                        <h3 class="font-display font-semibold mt-1">Optimise</h3>
+                        <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Measure performance and
+                            continuously improve the system.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SELECTED WORK -->
+        <section class="container-px mx-auto max-w-7xl pb-20 lg:pb-28">
+            <div class="flex flex-wrap items-end justify-between gap-6">
+                <div class="max-w-xl">
+                    <span class="eyebrow">Selected works.html</span>
+                    <h2 class="font-display font-bold text-3xl md:text-[2.6rem] mt-4 leading-tight text-balance">
+                        Engagements building a smarter Northeast.</h2>
+                </div>
+                <a href="works.html" class="btn-secondary shrink-0">
+                    View more works
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mt-12">
+                <a href="works.html"
+                    class="card overflow-hidden group hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <img src="https://placehold.co/700x500/0f2a66/ffffff?text=KAAC+Financial+System"
+                        alt="KAAC financial management software placeholder" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <span
+                            class="font-mono-label text-[11px] uppercase tracking-wide text-[var(--color-blue)]">Government</span>
+                        <h3
+                            class="font-display font-semibold text-lg mt-3 leading-snug group-hover:text-[var(--color-blue)] transition-colors">
+                            Financial Management Software — KAAC</h3>
+                        <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Structured, transparent
+                            financial systems for the Karbi Anglong Autonomous Council.</p>
+                    </div>
+                </a>
+
+                <a href="works.html"
+                    class="card overflow-hidden group hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <img src="https://placehold.co/700x500/1b3fbf/ffffff?text=Computer+Training"
+                        alt="Computer training program placeholder" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <span
+                            class="font-mono-label text-[11px] uppercase tracking-wide text-[var(--color-green-deep)]">Education</span>
+                        <h3
+                            class="font-display font-semibold text-lg mt-3 leading-snug group-hover:text-[var(--color-blue)] transition-colors">
+                            Computer Training Programs</h3>
+                        <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Practical digital skills
+                            training undertaken with reputed colleges across Assam.</p>
+                    </div>
+                </a>
+
+                <a href="works.html"
+                    class="card overflow-hidden group hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <img src="https://placehold.co/700x500/16a34a/ffffff?text=AI+%26+Robotics+Vision"
+                        alt="AI and robotics future skills initiative placeholder" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <span
+                            class="font-mono-label text-[11px] uppercase tracking-wide text-[var(--color-green-deep)]">AI
+                            &amp; Robotics</span>
+                        <h3
+                            class="font-display font-semibold text-lg mt-3 leading-snug group-hover:text-[var(--color-blue)] transition-colors">
+                            Thek‑Long Ovekimi &amp; Gyanthir</h3>
+                        <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">A future‑skills vision for AI
+                            &amp; Robotics learning across the Bodoland region.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- PULL QUOTE -->
+        <section class="container-px mx-auto max-w-7xl pb-20 lg:pb-28">
+            <div class="border-t border-b border-[var(--color-line)] py-14 md:py-16 text-center">
+                <span class="font-display text-5xl md:text-6xl text-[var(--color-green)] leading-none">&ldquo;</span>
+                <p
+                    class="font-display font-medium text-2xl md:text-4xl max-w-3xl mx-auto leading-snug text-balance -mt-4">
+                    Technology should not simply digitise an existing process. Technology should transform it.
+                </p>
+                <p class="font-mono-label text-xs uppercase tracking-widest text-[var(--color-muted-2)] mt-6">PROSMITECH
+                    — Company Philosophy</p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="container-px mx-auto max-w-7xl pb-20 lg:pb-28">
+            <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+                <div class="lg:col-span-4">
+                    <span class="eyebrow">FAQ</span>
+                    <h2 class="font-display font-bold text-3xl md:text-[2.6rem] mt-4 leading-tight text-balance">
+                        Frequently asked questions.</h2>
+                    <p class="text-[var(--color-muted)] mt-4 leading-relaxed">Can't find what you're looking for?</p>
+                    <a href="contact.html" class="btn-secondary mt-5">Ask us directly</a>
+                </div>
+
+                <div
+                    class="lg:col-span-8 divide-y divide-[var(--color-line)] border-t border-b border-[var(--color-line)]">
+                    <details class="group py-5">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none">
+                            <span class="font-display font-semibold text-base md:text-lg">What kind of software does
+                                PROSMITECH build?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0 text-[var(--color-blue)] transition-transform duration-200 group-open:rotate-45"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </summary>
+                        <p class="text-sm md:text-base text-[var(--color-muted)] mt-3 leading-relaxed max-w-2xl">
+                            Enterprise and government software, financial management systems, MIS, web and mobile
+                            applications, database‑driven systems, workflow automation and custom digital platforms.</p>
+                    </details>
+
+                    <details class="group py-5">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none">
+                            <span class="font-display font-semibold text-base md:text-lg">Do you only works.html with
+                                government organisations?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0 text-[var(--color-blue)] transition-transform duration-200 group-open:rotate-45"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </summary>
+                        <p class="text-sm md:text-base text-[var(--color-muted)] mt-3 leading-relaxed max-w-2xl">No.
+                            Alongside government and autonomous council projects, we works.html with educational
+                            institutions,
+                            businesses and community/development initiatives that want to move from manual processes to
+                            intelligent systems.</p>
+                    </details>
+
+                    <details class="group py-5">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none">
+                            <span class="font-display font-semibold text-base md:text-lg">What does the AI &amp;
+                                Robotics education program involve?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0 text-[var(--color-blue)] transition-transform duration-200 group-open:rotate-45"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </summary>
+                        <p class="text-sm md:text-base text-[var(--color-muted)] mt-3 leading-relaxed max-w-2xl">
+                            Hands‑on AI and Robotics learning, future‑skills programs and youth technology initiatives
+                            designed to prepare children and young people in Northeast India for AI‑enabled careers.</p>
+                    </details>
+
+                    <details class="group py-5">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none">
+                            <span class="font-display font-semibold text-base md:text-lg">How does a typical engagement
+                                begin?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0 text-[var(--color-blue)] transition-transform duration-200 group-open:rotate-45"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </summary>
+                        <p class="text-sm md:text-base text-[var(--color-muted)] mt-3 leading-relaxed max-w-2xl">We
+                            follow the same five‑step path on every project — Identify, Digitise, Automate, Intelligent,
+                            Optimise — starting with understanding the existing process before proposing a solution.</p>
+                    </details>
+
+                    <details class="group py-5">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none">
+                            <span class="font-display font-semibold text-base md:text-lg">Where is PROSMITECH
+                                based?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0 text-[var(--color-blue)] transition-transform duration-200 group-open:rotate-45"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </summary>
+                        <p class="text-sm md:text-base text-[var(--color-muted)] mt-3 leading-relaxed max-w-2xl">
+                            PROSMITECH is registered in Guwahati, Assam, and works across Northeast India — including
+                            engagements in the Karbi Anglong and Bodoland regions.</p>
+                    </details>
+
+                    <details class="group py-5">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none">
+                            <span class="font-display font-semibold text-base md:text-lg">How can I discuss a project or
+                                get a quote?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0 text-[var(--color-blue)] transition-transform duration-200 group-open:rotate-45"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                            </svg>
+                        </summary>
+                        <p class="text-sm md:text-base text-[var(--color-muted)] mt-3 leading-relaxed max-w-2xl">Reach
+                            out through the <a href="contact.html"
+                                class="text-[var(--color-blue)] underline underline-offset-2">contact page</a>, by
+                            phone, or by email — we'll respond with next steps for your specific process.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="container-px mx-auto max-w-7xl pb-24 lg:pb-32">
+            <div
+                class="rounded-2xl bg-[var(--color-blue)] px-8 py-14 md:px-16 md:py-16 text-center relative overflow-hidden">
+                <div class="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-white/10"></div>
+                <div class="absolute -bottom-20 -left-10 w-56 h-56 rounded-full bg-[var(--color-green)]/20"></div>
+                <h2
+                    class="font-display font-bold text-2xl md:text-4xl text-white max-w-2xl mx-auto leading-tight relative">
+                    Let's transform ideas into intelligent solutions.</h2>
+                <p class="text-white/75 mt-4 relative">Government systems, enterprise software, or AI &amp; Robotics
+                    education — let's talk.</p>
+                <a href="contact.html"
+                    class="btn-primary !bg-white !text-[var(--color-blue-deep)] hover:!bg-white/90 mt-8 relative">Get in
+                    touch</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[var(--color-ink)] text-white/70">
+        <div class="container-px mx-auto max-w-7xl py-14 grid md:grid-cols-4 gap-10">
+            <div class="md:col-span-2">
+                <a href="index.html" class="flex items-center gap-2.5">
+                    <span class="w-8 h-8 rounded-lg bg-[var(--color-blue)] flex items-center justify-center">
+                        <span class="font-display font-bold text-white text-sm">P</span>
+                    </span>
+                    <span class="font-display font-bold text-white text-base">PROSMITECH</span>
+                </a>
+                <p class="text-sm mt-4 max-w-sm leading-relaxed">Smarter technology, stronger systems, better results —
+                    for governments, institutions, businesses and the youth of Northeast India.</p>
+            </div>
+            <div>
+                <p class="font-mono-label text-[11px] uppercase tracking-widest text-white/40">Navigate</p>
+                <div class="flex flex-col gap-2.5 mt-4 text-sm">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="services.html" class="hover:text-white transition-colors">Services</a>
+                    <a href="works.html" class="hover:text-white transition-colors">Work</a>
+                    <a href="about.html" class="hover:text-white transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div>
+                <p class="font-mono-label text-[11px] uppercase tracking-widest text-white/40">Contact</p>
+                <div class="flex flex-col gap-2.5 mt-4 text-sm">
+                    <a href="tel:+919954089344" class="hover:text-white transition-colors">+91 99540 89344</a>
+                    <a href="mailto:in_prosmitech@gmail.com"
+                        class="hover:text-white transition-colors">in_prosmitech@gmail.com</a>
+                    <span>Guwahati, Assam</span>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div
+                class="container-px mx-auto max-w-7xl py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-white/40">
+                <span>© 2026 PROSMITECH PRIVATE LIMITED. All rights reserved.</span>
+                <span>Established 2023 · Guwahati, Assam</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

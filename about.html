@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — PROSMITECH Private Limited</title>
+    <meta name="description"
+        content="PROSMITECH Private Limited — established 2023 in Guwahati, Assam. Our vision, mission and team behind AI-powered software and future-skills education for Northeast India." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css" />
+</head>
+
+<body class="antialiased">
+
+    <!-- NAVBAR -->
+    <header
+        class="fixed top-0 inset-x-0 z-50 bg-[var(--color-bg)]/85 backdrop-blur border-b border-[var(--color-line)]">
+        <div class="container-px mx-auto max-w-7xl flex items-center justify-between h-18 py-3">
+            <a href="index.html" class="flex items-center gap-2.5">
+                <span
+                    class="w-9 h-9 rounded-lg bg-[var(--color-blue)] flex items-center justify-center relative overflow-hidden">
+                    <span class="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-[var(--color-green)]/80"></span>
+                    <span class="relative font-display font-bold text-white text-lg">P</span>
+                </span>
+                <span class="font-display font-bold text-[17px] tracking-tight">PROSMITECH</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="works.html" class="nav-link">Works</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="contact.html" class="btn-primary !px-5 !py-2.5 !text-[13px]">Start a project</a>
+            </div>
+
+            <button id="menuBtn" aria-label="Open menu"
+                class="md:hidden w-10 h-10 flex items-center justify-center rounded-md border border-[var(--color-line)]">
+                <svg id="iconOpen" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden border-t border-[var(--color-line)] bg-[var(--color-bg)]">
+            <div class="container-px py-4 flex flex-col gap-1">
+                <a href="index.html" class="py-2.5 text-sm font-medium">Home</a>
+                <a href="services.html" class="py-2.5 text-sm font-medium">Services</a>
+                <a href="works.html" class="py-2.5 text-sm font-medium">Works</a>
+                <a href="about.html" class="py-2.5 text-sm font-medium text-[var(--color-blue)]">About</a>
+                <a href="contact.html" class="py-2.5 text-sm font-medium">Contact</a>
+                <a href="contact.html" class="btn-primary mt-2 !text-[13px]">Start a project</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-18">
+
+        <!-- PAGE HERO -->
+        <section class="bg-grid">
+            <div class="container-px mx-auto max-w-7xl pt-20 pb-14 lg:pt-28 lg:pb-20">
+                <span class="eyebrow">Who we are</span>
+                <h1 class="font-display font-bold text-4xl md:text-6xl mt-5 leading-[1.05] max-w-3xl text-balance">
+                    A technology company built for Northeast India's next decade.</h1>
+                <p class="text-[var(--color-muted)] text-base md:text-lg mt-6 max-w-xl leading-relaxed">Established
+                    in 2023 in Guwahati, Assam, PROSMITECH combines software development, AI, Robotics and
+                    technology education to solve real problems for governments, institutions, businesses and
+                    young people.</p>
+            </div>
+        </section>
+
+        <!-- COMPANY AT A GLANCE -->
+        <section class="container-px mx-auto max-w-7xl py-16 lg:py-20 border-t border-[var(--color-line)]">
+            <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+                <div class="lg:col-span-4">
+                    <p class="font-mono-label text-xs text-[var(--color-muted-2)]">01</p>
+                    <h2 class="font-display font-bold text-3xl mt-3 leading-tight">Company at a glance</h2>
+                </div>
+                <div class="lg:col-span-8">
+                    <p class="text-[var(--color-muted)] leading-relaxed">Our core strength lies in combining
+                        software development, Artificial Intelligence, Robotics, digital solutions and technology
+                        education to solve real-world problems. We believe technology should not simply digitise
+                        an existing process — technology should transform it.</p>
+                    <p class="text-[var(--color-muted)] leading-relaxed mt-4">Our objective is to help
+                        organisations move from traditional, manual and fragmented systems toward smarter,
+                        automated and AI-enabled solutions that improve efficiency, transparency,
+                        decision-making and measurable outcomes. At the same time, we're committed to preparing
+                        the next generation of Northeast India for a rapidly changing world through AI, Robotics
+                        and future-skills education.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISION -->
+        <section class="bg-[var(--color-ink)] text-white py-20 lg:py-24">
+            <div class="container-px mx-auto max-w-7xl">
+                <span class="eyebrow !text-[var(--color-green)]">Our vision</span>
+                <h2 class="font-display font-bold text-3xl md:text-[2.6rem] mt-4 max-w-3xl leading-tight text-balance">
+                    To build a smarter, future-ready Northeast through technology.</h2>
+                <p class="text-white/60 mt-5 max-w-2xl leading-relaxed">We envision a Northeast India where
+                    governments, institutions, businesses and young people are equipped to take advantage of the
+                    opportunities created by Artificial Intelligence, automation and emerging technologies — a
+                    strong, digitally empowered and future-ready technology ecosystem.</p>
+            </div>
+        </section>
+
+        <!-- MISSION -->
+        <section class="container-px mx-auto max-w-7xl py-20 lg:py-28">
+            <span class="eyebrow">Our mission</span>
+            <h2 class="font-display font-bold text-3xl md:text-[2.6rem] mt-4 max-w-2xl leading-tight text-balance">
+                Four commitments guide every engagement.</h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+                <div class="card p-6">
+                    <p class="font-mono-label text-[11px] text-[var(--color-muted-2)]">01</p>
+                    <h3 class="font-display font-semibold text-lg mt-3">Transform</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Replace inefficient
+                        traditional processes with intelligent digital systems.</p>
+                </div>
+                <div class="card p-6">
+                    <p class="font-mono-label text-[11px] text-[var(--color-muted-2)]">02</p>
+                    <h3 class="font-display font-semibold text-lg mt-3">Intelligent</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Integrate AI, automation and
+                        data-driven decision-making into practical solutions.</p>
+                </div>
+                <div class="card p-6">
+                    <p class="font-mono-label text-[11px] text-[var(--color-muted-2)]">03</p>
+                    <h3 class="font-display font-semibold text-lg mt-3">Empower</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Equip children and youth
+                        with AI, Robotics and emerging technology skills.</p>
+                </div>
+                <div class="card p-6">
+                    <p class="font-mono-label text-[11px] text-[var(--color-muted-2)]">04</p>
+                    <h3 class="font-display font-semibold text-lg mt-3">Build</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Create scalable technology
+                        solutions that can grow with changing organisational and societal needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT MAKES US DIFFERENT -->
+        <section class="container-px mx-auto max-w-7xl py-16 lg:py-20 border-t border-[var(--color-line)]">
+            <span class="eyebrow">What makes us different</span>
+            <h2 class="font-display font-bold text-3xl md:text-[2.6rem] mt-4 max-w-2xl leading-tight text-balance">We
+                don't just follow the brief.</h2>
+
+            <div class="grid md:grid-cols-2 gap-5 mt-12">
+                <div class="rounded-xl border border-[var(--color-line)] bg-white p-8">
+                    <p class="font-display font-semibold text-lg text-[var(--color-blue)]">We don't just build
+                        software.</p>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">We study the problem behind
+                        the requirement.</p>
+                </div>
+                <div class="rounded-xl border border-[var(--color-line)] bg-white p-8">
+                    <p class="font-display font-semibold text-lg text-[var(--color-blue)]">We don't just digitise.
+                    </p>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">We look for opportunities to
+                        automate and improve.</p>
+                </div>
+                <div class="rounded-xl border border-[var(--color-line)] bg-white p-8">
+                    <p class="font-display font-semibold text-lg text-[var(--color-blue)]">We don't just follow
+                        technology.</p>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">We prepare for where
+                        technology is going.</p>
+                </div>
+                <div class="rounded-xl border border-[var(--color-line)] bg-white p-8">
+                    <p class="font-display font-semibold text-lg text-[var(--color-blue)]">We don't just think
+                        about today.</p>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">We design with tomorrow in
+                        mind.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section class="container-px mx-auto max-w-7xl py-20 lg:py-28">
+            <span class="eyebrow">Our team</span>
+            <h2 class="font-display font-bold text-3xl md:text-[2.6rem] mt-4 max-w-2xl leading-tight text-balance">
+                Technology, engineering, education and regional vision — one ecosystem.</h2>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+                <div
+                    class="card p-6 hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <div
+                        class="w-10 h-10 rounded-md bg-[var(--color-blue)]/10 flex items-center justify-center text-[var(--color-blue)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8 9l-4 3 4 3M16 9l4 3-4 3M13 6l-2 12" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-semibold text-lg mt-5">Software Developers</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Professionals focused on
+                        building scalable and practical software systems.</p>
+                </div>
+                <div
+                    class="card p-6 hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <div
+                        class="w-10 h-10 rounded-md bg-[var(--color-green)]/10 flex items-center justify-center text-[var(--color-green-deep)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.8">
+                            <circle cx="12" cy="12" r="3" />
+                            <path stroke-linecap="round"
+                                d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-semibold text-lg mt-5">AI &amp; Robotics Engineers</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">Technology professionals
+                        working with emerging technologies and future-focused applications.</p>
+                </div>
+                <div
+                    class="card p-6 hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <div
+                        class="w-10 h-10 rounded-md bg-[var(--color-blue)]/10 flex items-center justify-center text-[var(--color-blue)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 4l9 4-9 4-9-4 9-4zM3 12l9 4 9-4M3 16l9 4 9-4" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-semibold text-lg mt-5">Technology &amp; Education Professionals
+                    </h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">People focused on
+                        translating complex technology into practical learning experiences for children and
+                        youth.</p>
+                </div>
+                <div
+                    class="card p-6 hover:border-[var(--color-blue)]/40 hover:-translate-y-1 transition-all duration-200">
+                    <div
+                        class="w-10 h-10 rounded-md bg-[var(--color-green)]/10 flex items-center justify-center text-[var(--color-green-deep)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 2l2.6 6.2L21 9l-5 4.4L17.4 21 12 17.5 6.6 21 8 13.4 3 9l6.4-.8L12 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-display font-semibold text-lg mt-5">Young Innovators</h3>
+                    <p class="text-sm text-[var(--color-muted)] mt-2 leading-relaxed">A growing group of young
+                        people who share our vision of transforming Northeast India into a stronger, smarter,
+                        more connected region.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NORTHEAST VISION -->
+        <section class="bg-[var(--color-ink)] text-white py-20 lg:py-28">
+            <div class="container-px mx-auto max-w-7xl">
+                <span class="eyebrow !text-[var(--color-green)]">From Northeast India to the future</span>
+                <h2 class="font-display font-bold text-3xl md:text-[2.6rem] mt-4 max-w-2xl leading-tight text-balance">
+                    A smarter and future-ready Northeast.</h2>
+                <p class="text-white/60 mt-4 max-w-xl leading-relaxed">The Northeast has a tremendous opportunity
+                    to participate in India's technology-driven future. We want to contribute by developing:</p>
+
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-4 mt-10">
+                    <span
+                        class="px-5 py-3 rounded-lg border border-white/15 bg-white/[0.03] font-display text-sm md:text-base">Technology
+                        Solutions</span>
+                    <span class="text-[var(--color-green)] text-xl font-display">+</span>
+                    <span
+                        class="px-5 py-3 rounded-lg border border-white/15 bg-white/[0.03] font-display text-sm md:text-base">Future-Ready
+                        Youth</span>
+                    <span class="text-[var(--color-green)] text-xl font-display">+</span>
+                    <span
+                        class="px-5 py-3 rounded-lg border border-white/15 bg-white/[0.03] font-display text-sm md:text-base">Digital
+                        Institutions</span>
+                    <span class="text-[var(--color-green)] text-xl font-display">+</span>
+                    <span
+                        class="px-5 py-3 rounded-lg border border-white/15 bg-white/[0.03] font-display text-sm md:text-base">AI
+                        &amp; Robotics Capability</span>
+                    <span class="text-[var(--color-green)] text-xl font-display">=</span>
+                    <span
+                        class="px-5 py-3 rounded-lg border border-[var(--color-green)]/40 bg-[var(--color-green)]/10 font-display text-sm md:text-base text-[var(--color-green)]">A
+                        Smarter &amp; Future-Ready Northeast</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="container-px mx-auto max-w-7xl py-20 lg:py-28">
+            <div
+                class="rounded-2xl bg-[var(--color-blue)] px-8 py-14 md:px-16 md:py-16 text-center relative overflow-hidden">
+                <div class="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-white/10"></div>
+                <div class="absolute -bottom-20 -left-10 w-56 h-56 rounded-full bg-[var(--color-green)]/20"></div>
+                <h2
+                    class="font-display font-bold text-2xl md:text-4xl text-white max-w-2xl mx-auto leading-tight relative">
+                    Let's build the future together.</h2>
+                <p class="text-white/75 mt-4 relative">Government systems, enterprise software, or AI &amp;
+                    Robotics education — let's talk.</p>
+                <a href="contact.html"
+                    class="btn-primary !bg-white !text-[var(--color-blue-deep)] hover:!bg-white/90 mt-8 relative">Get
+                    in touch</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[var(--color-ink)] text-white/70">
+        <div class="container-px mx-auto max-w-7xl py-14 grid md:grid-cols-4 gap-10">
+            <div class="md:col-span-2">
+                <a href="index.html" class="flex items-center gap-2.5">
+                    <span class="w-8 h-8 rounded-lg bg-[var(--color-blue)] flex items-center justify-center">
+                        <span class="font-display font-bold text-white text-sm">P</span>
+                    </span>
+                    <span class="font-display font-bold text-white text-base">PROSMITECH</span>
+                </a>
+                <p class="text-sm mt-4 max-w-sm leading-relaxed">Smarter technology, stronger systems, better
+                    results — for governments, institutions, businesses and the youth of Northeast India.</p>
+            </div>
+            <div>
+                <p class="font-mono-label text-[11px] uppercase tracking-widest text-white/40">Navigate</p>
+                <div class="flex flex-col gap-2.5 mt-4 text-sm">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="services.html" class="hover:text-white transition-colors">Services</a>
+                    <a href="works.html" class="hover:text-white transition-colors">Works</a>
+                    <a href="about.html" class="hover:text-white transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div>
+                <p class="font-mono-label text-[11px] uppercase tracking-widest text-white/40">Contact</p>
+                <div class="flex flex-col gap-2.5 mt-4 text-sm">
+                    <a href="tel:+919954089344" class="hover:text-white transition-colors">+91 99540 89344</a>
+                    <a href="mailto:in_prosmitech@gmail.com"
+                        class="hover:text-white transition-colors">in_prosmitech@gmail.com</a>
+                    <span>Guwahati, Assam</span>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div
+                class="container-px mx-auto max-w-7xl py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-white/40">
+                <span>© 2026 PROSMITECH PRIVATE LIMITED. All rights reserved.</span>
+                <span>Established 2023 · Guwahati, Assam</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

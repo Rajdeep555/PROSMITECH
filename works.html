@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work — PROSMITECH Private Limited</title>
+    <meta name="description"
+        content="Government, education and AI & Robotics engagements from PROSMITECH — including the KAAC financial management system." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css" />
+</head>
+
+<body class="antialiased">
+
+    <!-- NAVBAR -->
+    <header
+        class="fixed top-0 inset-x-0 z-50 bg-[var(--color-bg)]/85 backdrop-blur border-b border-[var(--color-line)]">
+        <div class="container-px mx-auto max-w-7xl flex items-center justify-between h-18 py-3">
+            <a href="index.html" class="flex items-center gap-2.5">
+                <span
+                    class="w-9 h-9 rounded-lg bg-[var(--color-blue)] flex items-center justify-center relative overflow-hidden">
+                    <span class="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-[var(--color-green)]/80"></span>
+                    <span class="relative font-display font-bold text-white text-lg">P</span>
+                </span>
+                <span class="font-display font-bold text-[17px] tracking-tight">PROSMITECH</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="work.html" class="nav-link active">Work</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="contact.html" class="btn-primary !px-5 !py-2.5 !text-[13px]">Start a project</a>
+            </div>
+
+            <button id="menuBtn" aria-label="Open menu"
+                class="md:hidden w-10 h-10 flex items-center justify-center rounded-md border border-[var(--color-line)]">
+                <svg id="iconOpen" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden border-t border-[var(--color-line)] bg-[var(--color-bg)]">
+            <div class="container-px py-4 flex flex-col gap-1">
+                <a href="index.html" class="py-2.5 text-sm font-medium">Home</a>
+                <a href="services.html" class="py-2.5 text-sm font-medium">Services</a>
+                <a href="work.html" class="py-2.5 text-sm font-medium text-[var(--color-blue)]">Work</a>
+                <a href="about.html" class="py-2.5 text-sm font-medium">About</a>
+                <a href="contact.html" class="py-2.5 text-sm font-medium">Contact</a>
+                <a href="contact.html" class="btn-primary mt-2 !text-[13px]">Start a project</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-18">
+
+        <!-- PAGE HERO -->
+        <section class="bg-grid">
+            <div class="container-px mx-auto max-w-7xl pt-20 pb-14 lg:pt-28 lg:pb-20">
+                <span class="eyebrow">Our work</span>
+                <h1 class="font-display font-bold text-4xl md:text-6xl mt-5 leading-[1.05] max-w-3xl text-balance">
+                    Engagements building a smarter Northeast.</h1>
+                <p class="text-[var(--color-muted)] text-base md:text-lg mt-6 max-w-xl leading-relaxed">A growing body
+                    of work across government, education and AI &amp; Robotics — from financial systems to future‑skills
+                    programs.</p>
+            </div>
+        </section>
+
+        <!-- FILTER TAGS (visual only) -->
+        <section class="container-px mx-auto max-w-7xl">
+            <div class="flex flex-wrap gap-3 pb-10 border-b border-[var(--color-line)]">
+                <span class="px-4 py-2 rounded-full bg-[var(--color-ink)] text-white text-sm font-medium">All
+                    work</span>
+                <span
+                    class="px-4 py-2 rounded-full border border-[var(--color-line)] text-sm font-medium">Government</span>
+                <span
+                    class="px-4 py-2 rounded-full border border-[var(--color-line)] text-sm font-medium">Education</span>
+                <span class="px-4 py-2 rounded-full border border-[var(--color-line)] text-sm font-medium">AI &amp;
+                    Robotics</span>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="container-px mx-auto max-w-7xl py-16 lg:py-20">
+            <div class="grid gap-8">
+
+                <!-- Project 1 -->
+                <a href="#"
+                    class="card overflow-hidden grid lg:grid-cols-2 group hover:border-[var(--color-blue)]/40 transition-colors duration-200">
+                    <img src="https://placehold.co/900x700/0f2a66/ffffff?text=KAAC+Financial+System"
+                        alt="KAAC financial management software placeholder"
+                        class="w-full h-full object-cover min-h-[260px]" />
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <span
+                            class="font-mono-label text-[11px] uppercase tracking-wide text-[var(--color-blue)]">Government
+                            · Karbi Anglong Autonomous Council</span>
+                        <h3
+                            class="font-display font-bold text-2xl md:text-3xl mt-4 leading-snug group-hover:text-[var(--color-blue)] transition-colors">
+                            Financial Management Software — KAAC</h3>
+                        <p class="text-[var(--color-muted)] mt-4 leading-relaxed">Supporting KAAC's move from fragmented
+                            financial processes to a structured, transparent and technology‑enabled management
+                            environment — covering financial data, AG/audit reporting, monitoring and decision‑making.
+                        </p>
+                        <div class="flex items-center gap-2 mt-6">
+                            <span class="w-2 h-2 rounded-full bg-[var(--color-green)]"></span>
+                            <span
+                                class="font-mono-label text-xs uppercase tracking-wide text-[var(--color-muted)]">Status:
+                                Development Phase</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="#"
+                    class="card overflow-hidden grid lg:grid-cols-2 group hover:border-[var(--color-blue)]/40 transition-colors duration-200">
+                    <div class="p-8 md:p-12 flex flex-col justify-center lg:order-1 order-2">
+                        <span
+                            class="font-mono-label text-[11px] uppercase tracking-wide text-[var(--color-green-deep)]">Education
+                            · Colleges of Assam</span>
+                        <h3
+                            class="font-display font-bold text-2xl md:text-3xl mt-4 leading-snug group-hover:text-[var(--color-blue)] transition-colors">
+                            Computer Training Programs</h3>
+                        <p class="text-[var(--color-muted)] mt-4 leading-relaxed">Practical computer knowledge and
+                            digital capability training undertaken with reputed colleges across Assam, building
+                            foundational skills for students.</p>
+                        <div class="flex items-center gap-2 mt-6">
+                            <span class="w-2 h-2 rounded-full bg-[var(--color-blue)]"></span>
+                            <span
+                                class="font-mono-label text-xs uppercase tracking-wide text-[var(--color-muted)]">Status:
+                                Ongoing</span>
+                        </div>
+                    </div>
+                    <img src="https://placehold.co/900x700/1b3fbf/ffffff?text=Computer+Training"
+                        alt="Computer training program placeholder"
+                        class="w-full h-full object-cover min-h-[260px] lg:order-2 order-1" />
+                </a>
+
+                <!-- Project 3 -->
+                <a href="#"
+                    class="card overflow-hidden grid lg:grid-cols-2 group hover:border-[var(--color-blue)]/40 transition-colors duration-200">
+                    <img src="https://placehold.co/900x700/16a34a/ffffff?text=AI+%26+Robotics+Vision"
+                        alt="AI and robotics future skills initiative placeholder"
+                        class="w-full h-full object-cover min-h-[260px]" />
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <span
+                            class="font-mono-label text-[11px] uppercase tracking-wide text-[var(--color-green-deep)]">AI
+                            &amp; Robotics · Karbi Anglong &amp; BTC Region</span>
+                        <h3
+                            class="font-display font-bold text-2xl md:text-3xl mt-4 leading-snug group-hover:text-[var(--color-blue)] transition-colors">
+                            Thek‑Long Ovekimi &amp; Gyanthir — Bodoland</h3>
+                        <p class="text-[var(--color-muted)] mt-4 leading-relaxed">A future‑skills vision under
+                            discussion for AI incubation centres, robotics, automation, software and data learning —
+                            preparing youth for AI‑enabled careers.</p>
+                        <div class="flex items-center gap-2 mt-6">
+                            <span class="w-2 h-2 rounded-full bg-[var(--color-muted-2)]"></span>
+                            <span
+                                class="font-mono-label text-xs uppercase tracking-wide text-[var(--color-muted)]">Status:
+                                In Discussion</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="container-px mx-auto max-w-7xl pb-24 lg:pb-32">
+            <div
+                class="rounded-2xl bg-[var(--color-blue)] px-8 py-14 md:px-16 md:py-16 text-center relative overflow-hidden">
+                <div class="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-white/10"></div>
+                <div class="absolute -bottom-20 -left-10 w-56 h-56 rounded-full bg-[var(--color-green)]/20"></div>
+                <h2
+                    class="font-display font-bold text-2xl md:text-4xl text-white max-w-2xl mx-auto leading-tight relative">
+                    Have a system worth transforming?</h2>
+                <p class="text-white/75 mt-4 relative">Let's talk about where your process is today — and where it could
+                    go.</p>
+                <a href="contact.html"
+                    class="btn-primary !bg-white !text-[var(--color-blue-deep)] hover:!bg-white/90 mt-8 relative">Get in
+                    touch</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[var(--color-ink)] text-white/70">
+        <div class="container-px mx-auto max-w-7xl py-14 grid md:grid-cols-4 gap-10">
+            <div class="md:col-span-2">
+                <a href="index.html" class="flex items-center gap-2.5">
+                    <span class="w-8 h-8 rounded-lg bg-[var(--color-blue)] flex items-center justify-center">
+                        <span class="font-display font-bold text-white text-sm">P</span>
+                    </span>
+                    <span class="font-display font-bold text-white text-base">PROSMITECH</span>
+                </a>
+                <p class="text-sm mt-4 max-w-sm leading-relaxed">Smarter technology, stronger systems, better results —
+                    for governments, institutions, businesses and the youth of Northeast India.</p>
+            </div>
+            <div>
+                <p class="font-mono-label text-[11px] uppercase tracking-widest text-white/40">Navigate</p>
+                <div class="flex flex-col gap-2.5 mt-4 text-sm">
+                    <a href="index.html" class="hover:text-white transition-colors">Home</a>
+                    <a href="services.html" class="hover:text-white transition-colors">Services</a>
+                    <a href="work.html" class="hover:text-white transition-colors">Work</a>
+                    <a href="about.html" class="hover:text-white transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+            <div>
+                <p class="font-mono-label text-[11px] uppercase tracking-widest text-white/40">Contact</p>
+                <div class="flex flex-col gap-2.5 mt-4 text-sm">
+                    <a href="tel:+919954089344" class="hover:text-white transition-colors">+91 99540 89344</a>
+                    <a href="mailto:in_prosmitech@gmail.com"
+                        class="hover:text-white transition-colors">in_prosmitech@gmail.com</a>
+                    <span>Guwahati, Assam</span>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-white/10">
+            <div
+                class="container-px mx-auto max-w-7xl py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-white/40">
+                <span>© 2026 PROSMITECH PRIVATE LIMITED. All rights reserved.</span>
+                <span>Established 2023 · Guwahati, Assam</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
